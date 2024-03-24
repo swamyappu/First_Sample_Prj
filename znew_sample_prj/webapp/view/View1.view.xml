@@ -1,0 +1,55 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.practice.znewsampleprj.controller.View1" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table noDataText="Drop column list items here and columns in the area above" id="table0" items="{/ZTESTS01}">
+                <items>
+                    <ColumnListItem type="Active" id="item0">
+                        <cells>
+                            <CheckBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" selected="false" id="box0"/>
+                            <Text text="{Id}" id="text3"/>
+                            <Text text="{FirstName} {LastName}" id="text4"/>
+                            <Text text="{Age}" id="text5"/>
+                            <Text xmlns="sap.m" text="{Course}" id="text4_17"/></cells>
+                    </ColumnListItem>
+                </items>
+                <columns>
+                    <Column xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="column1_1711157005284">
+                        <header>
+                            <Text text="Header" id="text5_1711157005284"/>
+                            
+                        </header>
+                        
+                    </Column>
+                    <Column id="column1">
+                        <header>
+                            <Label text="ID" id="label0"/>
+                        </header>
+                    </Column>
+                    <Column id="column2">
+                        <header>
+                            <Label text="Name" id="label1"/>
+                        </header>
+                    </Column>
+                    <Column id="column3">
+                        <header>
+                            <Label text="Age" id="label2"/>
+                        </header>
+                    </Column>
+                    <Column id="column0">
+                        <header>
+                            <Text text="Course" id="text3_1711156892747"/>
+                        </header>
+                    </Column></columns>
+                <headerToolbar>
+                    <Toolbar xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" id="toolbar1">
+                        <content>
+                            <ToolbarSpacer id="spacer0"/>
+                            <Button xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Create" id="button0" press="toView2"/>
+                            <Button xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Delete" id="button0_copy"/>
+                            </content>
+                        
+                    </Toolbar>
+                </headerToolbar></Table>
+        </content>
+    </Page>
+</mvc:View>

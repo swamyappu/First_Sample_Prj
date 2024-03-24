@@ -1,0 +1,33 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form" controllerName="com.practice.znewsampleprj.controller.View2" displayBlock="true">
+    <Page id="create" title="{i18n>View2Title}">
+        <content>
+            <form:SimpleForm xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+                <form:content>
+                                    <Label text="{i18n>First_Name}" id="label0" />
+                                    <Input width="100%" id="input1" required="true"/>
+                                    <Label text="{i18n>Last_Name}" id="label1" />
+                                    <Input width="100%" id="input2" required="true"/>
+                                    <Label text="{i18n>Age}" id="label2" />
+                                    <Input width="100%" id="input3" placeholder="Age"/>
+                                    <Label text="{i18n>Course}" id="label3"/>
+                                    <Input width="100%" id="input4"/>
+                                    <Label text="{i18n>Course_Dura}" id="label4"/>
+                                    <Input width="100%" id="input5"/>
+                                    <Label text="{i18n>Status}" id="label5"/>
+                                    <Input width="100%" id="input6" />
+                                    <Label text="{i18n>Gender}" id="label6" />
+                                    <Input width="100%" id="input7" required="true"/>
+                                    <Label text="{i18n>DOB}" id="label7"/>
+                                    <Input width="100%" id="input8"/>
+                </form:content>
+            </form:SimpleForm>
+        </content>
+    <footer>
+        <Bar id="bar8">
+            <contentRight>
+                <Button xmlns="sap.m" text="Save" id="button1" press="onSave"/>
+            </contentRight>
+        </Bar>
+    </footer>
+    </Page>
+</mvc:View>
